@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/lizmat/Set-Equality.svg?branch=master)](https://travis-ci.org/lizmat/Set-Equality)
-
 NAME
 ====
 
