@@ -1,0 +1,22 @@
+{
+  "auth" : "cpan:ELIZABETH",
+  "authors" : [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "Implement (==) for older Raku versions",
+  "license" : "Artistic-2.0",
+  "name" : "Set::Equality",
+  "perl" : "6.c",
+  "provides" : {
+    "Set::Equality" : "lib/Set/Equality.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "https://github.com/lizmat/Set-Equality.git",
+  "tags" : [
+    "CORE"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
