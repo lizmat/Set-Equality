@@ -1,6 +1,6 @@
 use v6.c;
 
-unit module Set::Equality:ver<0.0.1>:auth<cpan:ELIZABETH>;
+unit module Set::Equality:ver<0.0.2>:auth<cpan:ELIZABETH>;
 
 use nqp;
 
@@ -213,7 +213,9 @@ Set::Equality - Implement (==) for older Raku versions
 =head1 DESCRIPTION
 
 The C<Set::Equality> module implements the C<(==)> operator (and its unicode
-version C<≡>, and its counterpart C<≢>) for older versions of Raku.
+version C<≡>, and its counterpart C<≢>) for versions of Raku B<before> the
+2020.06 Rakudo compiler release.  Its implementation and tests are identical
+to the ones from Rakudo 2020.06 and later.
 
 The C<(==)> operator concepgtually coerces its parameters to C<Set>s for
 non-C<QuantHash> types.  So:
@@ -248,4 +250,4 @@ the Artistic License 2.0.
 
 =end pod
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

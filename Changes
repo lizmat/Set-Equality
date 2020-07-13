@@ -2,5 +2,9 @@ Revision history for Set-Equality
 
 {{$NEXT}}
 
+0.0.2  2020-07-13T15:46:23+02:00
+    - Mention which version of Rakudo has set equality operators.
+    - Added roast test file for set equality tests.
+
 0.0.1  2020-05-30T14:32:23+02:00
-    - Initial version
+    - Initial version.

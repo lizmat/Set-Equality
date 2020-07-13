@@ -1,9 +1,7 @@
 use v6;
 use Test;
-
 use Set::Equality;
 
-#--- copied from S03-operators/set_equality.t ----------------------------------
 # This test file tests the following set operators:
 #   (==)  set equality (ASCII)
 #   ≡     is identical to
@@ -399,4 +397,4 @@ for &infix:<≢>, "≢" -> &op, $name {
     }
 }
 
-# vim: ft=perl6
+# vim: expandtab shiftwidth=4

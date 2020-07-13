@@ -2,6 +2,8 @@ use v6.c;
 use Test;
 use Set::Equality;
 
-pass "replace me";
+plan 1;
 
-done-testing;
+pass "Module loaded ok";
+
+# vim: expandtab shiftwidth=4
