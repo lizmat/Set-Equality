@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 
 unit module Set::Equality:ver<0.0.2>:auth<cpan:ELIZABETH>;
 
