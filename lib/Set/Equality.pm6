@@ -1,6 +1,6 @@
 use v6.*;
 
-unit module Set::Equality:ver<0.0.2>:auth<cpan:ELIZABETH>;
+unit module Set::Equality:ver<0.0.3>:auth<zef:lizmat>;
 
 use nqp;
 
@@ -236,14 +236,14 @@ C<bar> and C<baz>, and each of these keys holds a truthy value.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/Set-Equality . Comments
 and Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2020 Elizabeth Mattijsen
+Copyright 2020, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under
 the Artistic License 2.0.
