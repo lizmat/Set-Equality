@@ -12,7 +12,8 @@
   "name": "Set::Equality",
   "perl": "6.c",
   "provides": {
-    "Set::Equality": "lib/Set/Equality.pm6"
+    "Set::Equality": "lib/Set/Equality.pm6",
+    "Set::Equality::Implementation": "lib/Set/Equality/Implementation.pm6"
   },
   "resources": [
   ],
@@ -22,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.3"
+  "version": "0.0.4"
 }

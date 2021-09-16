@@ -15,7 +15,9 @@ DESCRIPTION
 
 The `Set::Equality` module implements the `(==)` operator (and its unicode version `≡`, and its counterpart `≢`) for versions of Raku **before** the 2020.06 Rakudo compiler release. Its implementation and tests are identical to the ones from Rakudo 2020.06 and later.
 
-The `(==)` operator concepgtually coerces its parameters to `Set`s for non-`QuantHash` types. So:
+On versions of Rakudo that already implement the `(==)` operator and its friends, loading this module is basically a no-op.
+
+The `(==)` operator conceptually coerces its parameters to `Set`s for non-`QuantHash` types. So:
 
     (1,2,3) (==) (3,1,2)
 
