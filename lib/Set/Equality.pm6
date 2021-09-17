@@ -1,6 +1,6 @@
 use v6.*;
 
-module Set::Equality:ver<0.0.4>:auth<zef:lizmat> { }  # satisfy mi6
+module Set::Equality:ver<0.0.5>:auth<zef:lizmat> { }  # satisfy mi6
 
 sub EXPORT() {
     if  CORE::<&infix:<(==)>> {

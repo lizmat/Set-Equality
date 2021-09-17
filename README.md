@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/Set-Equality/workflows/test/badge.svg)](https://github.com/lizmat/Set-Equality/actions)
+
 NAME
 ====
 
