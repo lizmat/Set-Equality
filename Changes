@@ -2,6 +2,10 @@ Revision history for Set-Equality
 
 {{$NEXT}}
 
+0.0.6  2021-09-17T12:52:01+02:00
+    - Simplify the import/export logic
+    - Checked everything works also on older systems when installed
+
 0.0.5  2021-09-17T12:29:58+02:00
     - Fix upload snafu, first version arriving at zef ecosystem
 
