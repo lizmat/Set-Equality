@@ -1,18 +1,20 @@
 use v6.*;
 
-module Set::Equality:ver<0.0.4>:auth<zef:lizmat> {
-}
+module Set::Equality:ver<0.0.4>:auth<zef:lizmat> { }  # satisfy mi6
 
 sub EXPORT() {
-    if CORE::<&infix:<(==)>> {
+    if  CORE::<&infix:<(==)>> {
         Map.new
     }
     else {
-        require Set::Equality::Implementation;
+        require Implementation;
+        my &se  := Implementation::{'&infix:<(==)>'};
+        my &sne := Implementation::{'&infix:<≢>'};
+
         Map.new:
-          '&infix:<(==)>' => &infix:<(==)>,
-          '&infix:<≡>'    => &infix:<(==)>,
-          '&infix:<≢>'    => &infix:<≢>,
+          '&infix:<(==)>' => &se,
+          '&infix:<≡>'    => &se,
+          '&infix:<≢>'    => &sne,
     }
 }
 

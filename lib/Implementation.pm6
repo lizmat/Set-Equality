@@ -1,7 +1,5 @@
 use v6.*;
 
-unit module Set::Equality::Implementation:ver<0.0.3>:auth<zef:lizmat>;
-
 use nqp;
 
 #--- from src/core.c/set_equality ----------------------------------------------
@@ -10,7 +8,7 @@ use nqp;
 #   ≡     is identical to
 #   ≢     is not identical to
 
-proto sub infix:<<(==)>>($, $, *% --> Bool:D) is pure is export {*}
+our proto sub infix:<<(==)>>($, $, *% --> Bool:D) is pure {*}
 multi sub infix:<<(==)>>(Setty:D \a, Setty:D \b --> Bool:D) {
     nqp::unless(
       nqp::eqaddr(nqp::decont(a),nqp::decont(b)),
@@ -149,10 +147,10 @@ multi sub infix:<<(==)>>(Any $, Failure:D \b) { b.throw }
 multi sub infix:<<(==)>>(Any \a, Any \b --> Bool:D) { a.Set (==) b.Set }
 
 # U+2261 IDENTICAL TO
-my constant &infix:<≡> is export = &infix:<<(==)>>;
+our constant &infix:<≡> = &infix:<<(==)>>;
 
 # U+2262 NOT IDENTICAL TO
-proto sub infix:<≢>($, $, *%) is pure is export {*}
+our proto sub infix:<≢>($, $, *%) is pure {*}
 multi sub infix:<≢>(\a, \b --> Bool:D) { not a (==) b }
 
 #--- from src/core.c/Rakudo/QuantHash ------------------------------------------
@@ -202,7 +200,7 @@ my sub MIX-IS-EQUAL(\a,\b) {
 
 =head1 NAME
 
-Set::Equality::Implementation - Implement (==) for older Raku versions
+Implementation - Implement (==) for older Raku versions
 
 =head1 DESCRIPTION
 

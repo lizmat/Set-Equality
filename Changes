@@ -1,6 +1,8 @@
 Revision history for Set-Equality
 
 {{$NEXT}}
+
+0.0.4  2021-09-17T12:26:40+02:00
     - Move to the zef ecosystem
     - Change my email address
 
