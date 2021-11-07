@@ -1,7 +1,3 @@
-use v6.*;
-
-module Set::Equality:ver<0.0.6>:auth<zef:lizmat> { }  # satisfy mi6
-
 sub EXPORT() {
     if  CORE::<&infix:<(==)>> {
         Map.new

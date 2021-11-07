@@ -2,6 +2,9 @@ Revision history for Set-Equality
 
 {{$NEXT}}
 
+0.0.7  2021-11-07T12:12:12+01:00
+    - Remove module statement, we don't need it anymore
+
 0.0.6  2021-09-17T12:52:01+02:00
     - Simplify the import/export logic
     - Checked everything works also on older systems when installed
