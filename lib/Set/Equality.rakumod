@@ -19,9 +19,13 @@ Set::Equality - Implement (==) for older Raku versions
 
 =head1 SYNOPSIS
 
-  use Set::Equality;
+=begin code :lang<raku>
 
-  say (1,2,3) (==) (3,1,2);  # True
+use Set::Equality;
+
+say (1,2,3) (==) (3,1,2);  # True
+
+=end code
 
 =head1 DESCRIPTION
 
@@ -36,16 +40,28 @@ friends, loading this module is basically a no-op.
 The C<(==)> operator conceptually coerces its parameters to C<Set>s for
 non-C<QuantHash> types.  So:
 
-  (1,2,3) (==) (3,1,2)
+=begin code :lang<raku>
+
+(1,2,3) (==) (3,1,2)
+
+=end code
 
 is conceptually the same as:
 
-  (1,2,3).Set eqv (3,1,2).Set
+=begin code :lang<raku>
+
+(1,2,3).Set eqv (3,1,2).Set
+
+=end code
 
 It will however actually do as little actual coercion as possible to provide
 the C<True> or C<False> it is to return.  For example:
 
-  <foo bar baz> (==) %hash
+=begin code :lang<raku>
+
+<foo bar baz> (==) %hash
+
+=end code
 
 will return C<True> if there are 3 keys in the hash, and they are C<foo>,
 C<bar> and C<baz>, and each of these keys holds a truthy value.
@@ -57,9 +73,13 @@ Elizabeth Mattijsen <liz@raku.rocks>
 Source can be located at: https://github.com/lizmat/Set-Equality . Comments
 and Pull Requests are welcome.
 
+If you like this module, or what I’m doing more generally, committing to a
+L<small sponsorship|https://github.com/sponsors/lizmat/>  would mean a great
+deal to me!
+
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2020, 2021 Elizabeth Mattijsen
+Copyright 2020, 2021, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under
 the Artistic License 2.0.
